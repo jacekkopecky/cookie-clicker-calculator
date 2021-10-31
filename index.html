@@ -1,0 +1,82 @@
+<!doctype html>
+<title>cookie clicker calculator</title>
+
+<style>
+  input.price,
+  input.prod,
+  input.frenzy {
+    width: 12ch;
+    border: none;
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+  }
+
+  th,
+  td {
+    text-align: left;
+    border: solid thin grey;
+    padding: 0.2em;
+  }
+
+  tbody th {
+    font-weight: normal;
+  }
+</style>
+
+<h1>cookie clicker calculator</h1>
+
+<table id="values">
+  <thead>
+    <tr>
+      <th>Building</th>
+      <th>Current price</th>
+      <th>Production (cps)</th>
+      <th>Frenzy prod</th>
+      <th>Buy this many:</th>
+      <th>Up to the price of:</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><th>Cursor             <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Grandma            <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Farm               <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Mine               <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Factory            <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Bank               <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Temple             <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Wizard tower       <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Shipment           <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Alchemy lab        <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Portal             <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Time machine       <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Animatter condenser<td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Prism              <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Chancemaker        <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+    <tr><th>Fractal engine     <td><input class="price" placeholder="cookies"><td><input class="prod" placeholder="cps"><td><input class="frenzy" placeholder="cps"><td class="buy"><td class="upTo"></tr>
+  </tbody>
+</table>
+
+<table id="buffers">
+  <thead>
+    <tr>
+      <th>Current cps</th>
+      <th>Current frenzy cps</th>
+      <th>Normal buffer</th>
+      <th>Frenzy buffer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input class="prod" placeholder="cps">
+      <td><input class="frenzy" placeholder="cps">
+      <td class="normalBuf">
+      <td class="frenzyBuf">
+    </tr>
+  </tbody>
+</table>
+
+<script type="module" src="index.js"></script>
