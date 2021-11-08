@@ -2,10 +2,13 @@ import { n2s, s2n } from './n2s2n.js';
 
 window.addEventListener('load', init);
 
+const LOCAL_STORAGE_KEY = 'ccDataSave';
 const STEP = 1.15;
 
 function init() {
   document.querySelector('input.price').focus();
+
+  document.querySelector('#reset').addEventListener('click', reset);
 
   for (const el of document.querySelectorAll('input')) {
     el.addEventListener('input', recompute);
@@ -136,11 +139,11 @@ function findParent(element, selector) {
 
 
 function save() {
-  localStorage.setItem('ccDataSave', JSON.stringify(data));
+  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(data));
 }
 
 function load() {
-  const loaded = JSON.parse(localStorage.getItem('ccDataSave'));
+  const loaded = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
   if (Array.isArray(loaded)) data = loaded;
 
   const tableBody = document.querySelector('#values > tbody');
@@ -175,4 +178,11 @@ function updateBuffers(el) {
 
   tr.querySelector('.normalBuf').textContent = n2s(val * 6000);
   tr.querySelector('.frenzyBuf').textContent = n2s(val * 7 * 6000);
+}
+
+function reset() {
+  if (window.confirm('do you really want to reset all values?')) {
+    localStorage.removeItem(LOCAL_STORAGE_KEY);
+    window.location.reload();
+  }
 }
