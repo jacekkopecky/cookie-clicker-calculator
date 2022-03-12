@@ -9,8 +9,9 @@ const num2Suffix = {
   21: 'Sx',
   24: 'Sp',
   27: 'Oc',
-  30: 'N',
-  33: 'D',
+  30: 'No',
+  33: 'Dc',
+  36: 'UnD',
 };
 
 const suffix2Num = {};
